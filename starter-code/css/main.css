@@ -6,13 +6,26 @@ Green: #00B172
 White: #FFF
 
 */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 13px 32px;
+}
 
 .spotify-logo {
   width: 167px;
 }
 
 .backgroundpic {
-  width: 100%;
+  display: flex;
+  padding: 100px;
+  height: 600px;
+  background-image: url('../images/landing.jpg');
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 nav {
@@ -21,6 +34,9 @@ nav {
   list-style-type: none;
 }
 
+.navbarlink {
+  margin: 12px;
+}
 nav a {
   color: inherit;
   text-decoration: none;
@@ -29,6 +45,7 @@ nav a {
 body {
   font-family: "Lucida Grande", sans-serif;
   color: 00000;
+  margin: 0;
 }
 
 h1 {
@@ -43,9 +60,33 @@ h1 {
   text-align: center;
 }
 
-h2 {
-  text-align: center;
+.highlightstitle {
+  display: inline-flex;
   font-size: 30px;
+  border-bottom: 3px solid #00B172;
+}
+
+.highlights {
+  padding: 25px 30px 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.highlights div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.highlightsitems {
+  display: flex;
+  width: 15%;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 13px 32px;
 }
 
 .icon {
@@ -58,12 +99,27 @@ h2 {
 }
 
 .footer {
-  background-color: #00B172
+  padding: 47px 75px 60px;
+  margin-bottom: 25px;
+  margin-left: 30px;
+  margin-right: 30px;
+  display: flex;
+  flex-direction: column;
+  background-color: #00B172;
+  background-image: url('../images/spotify-icon-white.png');
+  background-repeat: no-repeat;
+  background-size: 100px 100px;
+  background-position: center;
 }
 
+.footer div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
 
 .footerh2 {
-  text-align: left;
   color: #ffffff;
 }
 
@@ -77,12 +133,11 @@ h2 {
   color: #ffffff;
 }
 
-.whiteicon {
-  width: 100px;
-  height: 100px;
-}
-
 .Yeezy {
   width: 259px;
   height: 460px;
+}
+
+.footer article {
+  width: 280px;
 }
